@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+	<_name>Guides creator</_name>
+	<id>org.inkscape.effect.guidescreator</id>
+	<dependency type="executable" location="extensions">guides_creator.py</dependency>
+	<dependency type="executable" location="extensions">inkex.py</dependency>
+	<param name="preset" type="optiongroup" appearance="minimal" _gui-text="Preset">
+    <_option value="custom">Custom...</_option>
+    <_option value="golden">Golden ratio</_option>
+    <_option value="3;3">Rule-of-third</_option>
+  </param>
+  <param name="vertical_guides" type="int" min="0" max="72" appearance="minimal" _gui-text="Vertical guide each">2</param>
+  <param name="vertical_offset" type="int" min="0" max="72" appearance="minimal" _gui_text="Vertical margin">0</param>
+	<param name="horizontal_guides" type="int" appearance="minimal" _gui-text="Horizontal guide each">2</param>
+  <param name="horizontal_offset" type="int" min="0" max="1000" appearance="minimal" _gui_text="Horizontal margin">0</param>
+  <param name="offset_unit" type="optiongroup" min="0" max="1000" appearance="minimal" _gui-text="Offset Unit">
+    <_option value="px">Px.</_option>
+    <_option value="mm">Mm.</_option>
+  </param>
+  <param name="start_from_edges" type="boolean" _gui-text="Start from edges">false</param>
+	<param name="delete_existing_guides" type="boolean" _gui-text="Delete existing guides">false</param>
+	<effect>
+		<object-type>all</object-type>
+		<effects-menu>
+			 <submenu _name="Render"/>
+		</effects-menu>
+	</effect>
+	<script>
+		<command reldir="extensions" interpreter="python">guides_creator.py</command>
+	</script>
+</inkscape-extension>
+
