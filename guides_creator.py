@@ -1,13 +1,9 @@
 #!/usr/bin/env python
 '''
-Guides Creator v2.0 (25/11/2008)
-http://code.google.com/p/inkscape-guides-creator/
+Inkscape GS v0.5 (19/03/2013)
+Tweaks Inkscape's default guides creator, Copyright (C) 2008 Jonas Termeau - jonas.termeau **AT** gmail.com
 
-Copyright (C) 2008 Jonas Termeau - jonas.termeau **AT** gmail.com
-
-Thanks to Bernard Gray - bernard.gray **AT** gmail.com
-
-## This basic extension allows you to automatically draw guides in inkscape.
+## This basic extension allows you to automatically draw guides with additional margins in inkscape in pixels or milimeters.
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -24,17 +20,13 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 '''
 
-# inspired by hello_world turorial by Blackhex and Rubikcube
+# Original Guides Creator extension inspired by 'hello_world' tutorial by Blackhex and Rubikcube
 # (http://wiki.inkscape.org/wiki/index.php/PythonEffectTutorial)
 
 # Making an .INX file : http://wiki.inkscape.org/wiki/index.php/MakingAnINX
 # see also http://codespeak.net/lxml/dev/tutorial.html#namespaces for XML namespaces manipulation
 
-# # # # # # # #
-# TODO:  See http://code.google.com/p/inkscape-guides-creator/wiki/Roadmap
-#
-# # # # # # # #
- 
+
 
 # # # extension's begining # # #
 
